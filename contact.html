@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title></title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="style.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lt IE 9]>
+			<script src="srcipts/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+    <div id="top-nav">
+      <div class="logo">
+        <img src=images/levelx.png title="Level X Logo" alt="logo">
+      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Training and Education</a></li>
+        <li><a href="#">Logistics</a></li>
+      </ul>
+    </nav>
+    </div>
+    <main>
+      <body>
+        <div id="container">
+          <section class="contact-section" id="contact-us">
+            <h3>Contact Level X</h3>
+
+            <form name="contact-form" id="contact-form" name="contact-form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+              <div class="name">
+                <label for="name" class="label_input_wrap">First Name:</label>
+                <input type="text" name="req_name" placeholder="Your Name Here" id="name" />
+              </div>
+
+              <div class="email">
+                <label for="email" class="label_input_wrap">Email: </label>
+                <input type="email" name="req_email" placeholder="Your Email Here" id="email" />
+              </div>
+
+              <div class="tel">
+                <label for="telephone" class="label_input_wrap" >Telephone: </label>
+                <input type="tel" name="telephone" placeholder="Your Telephone Here" id="telephone" />
+              </div>
+
+              <div class="comments">
+                <label for="comments" class="label_input_wrap">Comments: </label>
+                <textarea name="comments" maxlength="1000" placeholder="Insert Message here" id="comments"></textarea>
+              </div>
+
+              <div class="submit">
+                <input type="submit" value="Send">
+              </div>
+
+
+            </form>
+
+      </body>
+    </main>
+  <footer>
+    <div class="footerlogo">
+      <img src=images/levelx.png title="Level X Logo" alt="logo">
+    </div>
+    <ul class="footernav">
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Training and Education</a></li>
+    <li><a href="#">Logistics</a></li>
+    </ul>
+
+    </footer>
+<script src="scripts/main.js"></script>
+</body>
+
+</html>

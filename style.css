@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+  }
+
+
+
+body{
+   font-family: 'Merriweather',sans-serif;
+}
+
+/* nav */
+
+nav{
+  align-self: flex-end;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li{
+  max-width: 50%;
+  text-decoration: none;
+  list-style-type: none;
+
+  padding: 2%;
+}
+/*  */
+
+#heroimg img{
+max-width: 100%;
+}
+
+#top-nav{
+  background-color: #322a40;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.logo img{
+  max-width: 40%;
+}
+
+
+
+#topcontent{
+  margin-right: 2%;
+  font-size:.7em;
+  max-width: 50%;
+  background-color: white;
+  padding: 4%;
+  border-radius:12%;
+}
+#solphoto img{
+  max-width: 100%;
+  border-radius: 12%;
+}
+#topcontent h3{
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+}
+.solutions{
+  margin: 0 auto;
+  max-width: 80%;
+  justify-content: space-around;
+  display: flex;
+}
+#boxcontent{
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#box{
+  border-radius: 8%;
+  background-color: white;
+  margin: 2%;
+  padding: 3%;
+  width: 340px;
+}
+
+#box p{
+    font-size:.7em;
+}
+
+#box h3{
+  text-align: center;
+  color: #fbc558;
+  margin-bottom: 1.5%;
+}
+
+#content{
+  padding: 3%;
+  /* background-color: #140a25; */
+}
+
+/* bottom img gride code */
+.duns{
+  color: #fbc558;
+  margin-top: 6%;
+}
+.duns h2{
+  font-size: 2.3em;
+  padding-bottom: 2%;
+  margin: 0 auto;
+  text-align: center;
+}
+.learnmore{
+  padding: 2%;
+  margin: 0 auto;
+  max-width: 10%;
+  background-color: #fbc558;
+  text-align: center;
+  border-radius: 9%;
+}
+.bottomgrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.bottomgrid img{
+  border-radius: 8%;
+  max-width: 20%;
+  margin: 2%;
+}
+
+/*========================================
+*
+*     Contact Section
+*
+*
+*=========================================*/
+#container{
+	padding: 8%;
+}
+.contact-section {
+	background-color: #fbc558;
+  padding: 3%;
+  width: 30%;
+  margin: 0 auto;
+	margin-top: 0%;
+}
+
+.contact-section h3{
+	margin-bottom: 3%;
+}
+}
+.contact {
+  margin: 8% 0;
+}
+
+.contact div {
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+  display: block;
+}
+.contact-section input,
+.contact-section textarea {
+	padding: 3%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	border-radius: 4%;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid black;
+  padding: 2% 4%;
+}
+
+.submit input {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 1%;
+
+
+}
+
+/* footer code */
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #322a40;
+}
+
+.footernav{
+  margin-right: 20%;
+  padding: 2%;
+  list-style-type: none;
+}
+.footernav a{
+  font-size: .8em;
+  color: #fbc558
+}
+.footerlogo img{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 55%;
+  max-width: 30%;
+}
+
+/* constelation */
+canvas{
+  position: fixed;
+}
+
+
+@media (min-width: 900px){
+  #top-nav{
+    background-color: #322a40;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  nav{
+    width: 530px;
+  }
+
+
+  nav ul li a{
+    padding: 1%;
+  }
+
+nav ul{
+  flex-wrap: nowrap;
+}
+
+  #boxcontent{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  #box{
+    border-radius:8%;
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    width: 250px;
+  }
+
+  #box h3{
+    text-align: left;
+  }
+
+  #topcontent{
+    margin-right: 2%;
+    font-size:1em;
+    max-width: 50%;
+    background-color: white;
+    padding: 4%;
+    border-radius:12%;
+  }
+
+  #content{
+    padding: 2%;
+    /* background-color: #140a25; */
+  }
+  .solutions{
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .solutions h3{
+    font-size: 1.7em;
+  }
+  .solutions p{
+    font-size: 1.2em;
+  }
+  .footernav{
+    margin-right: 20%;
+    padding: 2%;
+    list-style-type: none;
+  }
+  .footernav a{
+    color: #fbc558
+  }
+  .footerlogo img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 75%;
+    max-width: 30%;
+  }
+}
