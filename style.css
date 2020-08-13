@@ -129,6 +129,7 @@ max-width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5%;
+  margin-bottom: 15%;
 }
 
 .bottomgrid img{
@@ -149,7 +150,7 @@ max-width: 100%;
 .contact-section {
 	background-color: #fbc558;
   padding: 3%;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
 	margin-top: 0%;
 }
@@ -159,7 +160,7 @@ max-width: 100%;
 }
 }
 .contact {
-  margin: 8% 0;
+  margin: 0% 0;
 }
 
 .contact div {
@@ -192,6 +193,20 @@ max-width: 100%;
 
 }
 
+.contacthead {
+  font-family: 'Merriweather', sans-serif;
+  width: 35%;
+	position: absolute;
+	left: 35%;
+	top: 38%;
+  bottom: 4%;
+}
+
+.contacthead {
+
+
+}
+
 /* footer code */
 
 footer{
@@ -215,12 +230,111 @@ footer{
   margin-left: 55%;
   max-width: 30%;
 }
-
-/* constelation */
-canvas{
-  position: fixed;
+.footer{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
 }
 
+
+.solhead {
+  font-family: 'Merriweather', sans-serif;
+  position: absolute;
+	left: 2%;
+	top: 80%;
+  bottom: 8%;
+}
+
+.solhead {
+  margin: 2% 2%;
+  padding: 2% 2%;
+}
+/* constelation */
+
+
+.head {
+  font-family: 'Merriweather', sans-serif;
+	position: absolute;
+	left: 2%;
+	top: 15%;
+  bottom: 8%;
+}
+
+.head {
+  margin: 10% 5%;
+  padding: 2% 2%;
+}
+
+
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 7000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 7000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 7000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 7000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:12000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:12000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:12000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:12000px 0;}
+}
+
+.stars, .twinkle {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:165%;
+  display:block;
+  z-index: -10;
+}
+
+.stars {
+  background:#140a25 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  z-index:-1;
+}
+
+.twinkle{
+  background:transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  z-index:-1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+#particles-js{
+  height: 1200px;
+}
 
 @media (min-width: 900px){
   #top-nav{
@@ -241,6 +355,8 @@ canvas{
 nav ul{
   flex-wrap: nowrap;
 }
+
+
 
   #boxcontent{
     display: flex;
@@ -269,10 +385,14 @@ nav ul{
     border-radius:12%;
   }
 
-  #content{
+  #content {
+    height: 860px;
     padding: 2%;
-    /* background-color: #140a25; */
   }
+.canvas{
+  position: absolute;
+  display: inline;
+}
   .solutions{
     margin-top: 2%;
     margin-bottom: 3%;
@@ -282,6 +402,10 @@ nav ul{
   }
   .solutions p{
     font-size: 1.2em;
+  }
+
+  .footer{
+    margin-top: 8%;
   }
   .footernav{
     margin-right: 20%;
